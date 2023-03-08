@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butoiasu' Cu Bere</title>
+    <link rel="icon" type="x-icon" href="imagini/favIcon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/plate-utensils?s=regular&f=sharp">
+    <link rel="stylesheet" href="styleWebsite.css">
+</head>
+<body>
+    <div id="infoTop">
+        <h4><i class="fa fa-map-location-dot"></i> Str. Gheorghe Șincai 15, Baia Mare</h4>
+        <h4><i class="fa fa-phone"></i> 074 592 443 <span>(rezervare)</span>-intre: 9:00-00:00</h4>
+        <h4><i class="fa fa-phone"></i> 074 592 334 <span>(evenimente)</span>-intre: 9:00-00:00</h4>
+    </div>
+
+        <nav>
+            <h2 class="nume">Butoiasu' Cu <span>Bere</span></h2>
+            <ul>
+                <li><a href="acasa.html">Acasa</a></li>
+                <li><a href="meniu.html">Meniul</a></li>
+                <li><a href="rezervare.html">Rezervare</a></li>
+                <li><a href="evenimente.html">Evenimente</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+
+        <div class="infoMeniu">
+            <p>Acasa <i class="fa fa-arrow-right"></i> <span>contacte</span></p>
+        </div>
+    
+            <div class="paginaContacte">
+                <div>
+                    <h2>Contactati-ne!</h2>
+                    <p>430071 Str. Gheorghe Șincai 15, Baia Mare</p>
+                    <p><b>Telefon - intre 9:00-00:00</b>
+                        <br>074 592 443 (rezervare)
+                        <br>074 592 334 (evenimente)
+                    </p>
+                    <p>
+                        <b>E-mail</b>
+                        <br>butoiasucubere@yahoo.com
+                    </p>
+                    <p>
+                        <b>Facebook</b>
+                        <br>Butoiasu' Cu Bere
+                    </p>
+                </div>
+                
+            <form id="recenzie">
+                <h3>Contactare/Recenzie</h3>
+                <input type="text" name="firstName" placeholder="Nume">
+                <input type="text" name="lastName" placeholder="Prenume">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Numar telefon">
+                <input type="number" name="nota" placeholder="Nota" min="1" max="10">
+                <textarea name="comment" placeholder="Lasa-ne o recenzie"></textarea>
+                <button id="submit" onclick="manipulareSubmit()">Submit</button>
+            </form>
+            </div>
+
+            <aside>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.32036605377!2d23.57654431559674!3d47.65877247918809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dc65e2933df7%3A0xdf50fff22047c116!2sButoia%C8%99u&#39;%20cu%20Bere!5e0!3m2!1sro!2sro!4v1677495428492!5m2!1sro!2sro" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+
+            <a href="#infoTop">
+                <div class="sageata">
+                    <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                </div>
+            </a>
+
+        <div class="footer">
+            <table>
+                <tr>
+                    <th>
+                        Sunati Acum
+                    </th>
+                    <th>
+                        Orar
+                    </th>
+                    <th>
+                        Rezervari
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        074 592 443 - informatii
+                    </td>
+                    <td>
+                        intre 9:00-00:00             
+                    </td>
+                    <td>
+                        074 592 334-
+                        intre 9:00-21:00
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="jsWebsite.js"></script>
+</body>
+</html>

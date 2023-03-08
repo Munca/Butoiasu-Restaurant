@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="imagini/favIcon.jpg">
+    <title>Butoiasu' Cu Bere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/plate-utensils?s=regular&f=sharp">
+    <link rel="stylesheet" href="styleWebsite.css">
+</head>
+<body>
+    <div id="infoTop">
+        <h4><i class="fa fa-map-location-dot"></i> Str. Gheorghe Șincai 15, Baia Mare</h4>
+        <h4><i class="fa fa-phone"></i> 074 592 443 <span>(rezervare)</span>-intre: 9:00-00:00</h4>
+        <h4><i class="fa fa-phone"></i> 074 592 334 <span>(evenimente)</span>-intre: 9:00-00:00</h4>
+    </div>
+
+        <nav>
+            <h2 class="nume">Butoiasu' Cu <span>Bere</span></h2>
+            <ul>
+                <li><a href="acasa.html">Acasa</a></li>
+                <li><a href="meniu.html">Meniul</a></li>
+                <li><a href="rezervare.html">Rezervare</a></li>
+                <li><a href="evenimente.html">Evenimente</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+
+        <a href="#infoTop">
+            <div class="sageata">
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+            </div>
+        </a>
+
+        <div class="infoMeniu">
+            <p>Acasa <i class="fa fa-arrow-right"></i> <span>Rezervare</span></p>
+        </div>
+
+        <div class="paginaRezervare">
+            <form id="rezervare">
+                <h4>Rezerva Masa</h4>
+                <input type="text" name="firstName" placeholder="Nume Rezervare" required>
+                <input type="text" name="lastName" placeholder="Prenume" required>
+                <input type="tel" name="phone" placeholder="Numar telefon">
+                <input type="date" name="data" placeholder="Data Rezervarii" required>
+                <select>
+                    <optgroup label="Alege Locul" aria-required="true">
+                        <option value="interior">Restaurant Interior</option>
+                        <option value="Exterior">Gradina Exterioara</option>
+                    </optgroup>
+                </select>
+                <br>
+                <button onclick="manipulareRezervare()">Rezerva</button>
+            </form>
+
+            <div class="imaginiRezervare">
+                <img src="imagini/imagineRestaurant5.jpg" alt="Masa">
+                <img src="imagini/masaAfara.jpg" alt="Masa">
+            </div>
+        </div>
+
+        <div class="footer">
+            <table>
+                <tr>
+                    <th>
+                        Sunati Acum
+                    </th>
+                    <th>
+                        Orar
+                    </th>
+                    <th>
+                        Rezervari
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        074 592 443 - informatii
+                    </td>
+                    <td>
+                        intre 9:00-00:00             
+                    </td>
+                    <td>
+                        074 592 334-
+                        intre 9:00-21:00
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="jsWebsite.js"></script>
+</body>
+</html>

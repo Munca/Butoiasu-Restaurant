@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Labrada', serif;
+}
+
+#infoTop {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+#infoTop span {
+    color: brown;
+}
+
+#infoTop h4{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+.nume {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+.nume span {
+    color: brown;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.infoMeniu {
+    padding-left: 20%;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.312);
+    align-items: center;
+    height: 50px;
+}
+
+.infoMeniu span {
+    color: brown;
+}
+
+                                                                    /*Stilul paginii acasa*/
+
+.imaginiRestaurant {
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    animation: animatieImagini 20s infinite;
+}
+
+@keyframes animatieImagini {
+    0%{
+        background-image: url('imagini/imagineRestaurant3.jpg');
+    }
+    25%{
+        background-image: url('imagini/imagineRestaurant5.jpg');
+    }
+    50%{
+        background-image: url('imagini/imagineRestaurant6.jpg');
+    }
+    75%{
+        background-image: url('imagini/imagineRestaurant2.jpg');
+    }
+    100%{
+        background-image: url('imagini/imagineRestaurant7.jpg');
+    }
+}
+
+.imaginiRestaurant h1 {
+    color: white;
+    font-size: 80px;
+    margin-top: 15%;
+    text-shadow: 3px 3px 3px black;
+}
+
+.imaginiRestaurant p {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px black;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.locatie {
+    background-image: url('imagini/pereteLocatie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.locatie div {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.locatie h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.locatie p {
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+.locatie a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    padding: 20px 25px;
+    font-size: 20px;
+    margin: 8%;
+    margin-left: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.locatie a:hover {
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    border: 1px solid brown;
+}
+
+.rezervare {
+    background-image: url('imagini/pereteRezervare2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rezervare div {
+    width: 70%;
+}
+
+.rezervare h2 {
+    text-align: -webkit-center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.rezervare p {
+    font-size: 25px;
+    margin-left: 30px;
+    padding-bottom: 40px;
+}
+
+.rezervare a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    padding: 20px 25px;
+    font-size: 20px;
+    width: 110px;
+    height: 20px;
+    margin: 35%;
+}
+
+.rezervare a:hover {
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+}
+
+.rezervare img {
+    float: left;
+    width: 800px;
+    height: 470px;
+}
+
+.facilitati {
+    background-color:rgba(240, 255, 255, 0.648);
+    padding-bottom: 1px;
+}
+
+.facilitati h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.facilitati table {
+    margin: 50px 15%;
+    font-size: 25px;
+}
+
+.facilitati table td {
+    text-align: -webkit-center;
+    padding: 0 50px;
+    width: 500px;
+}
+
+.facilitati i {
+    color: grey;
+}
+
+.facilitati p {
+    color: brown;
+}
+
+.meniu {
+    background-image: url('imagini/pereteMeniu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-flow: row;
+}
+
+.meniu div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.meniu div h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.meniu div p {
+    font-size: 30px;
+    margin: 0 5%;
+}
+
+.meniu img {
+    width: 800px;
+    height: 600px;
+}
+
+.meniu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    padding: 20px 25px;
+    font-size: 20px;
+    width: 110px;
+    margin-left: 40%;
+    text-align: center;
+}
+
+.meniu a:hover {
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    border: 1px solid brown;
+}
+
+.evenimente {
+    display: flex;
+    flex-flow: row;
+    background-image: url('imagini/pereteEvenimente2.jpg');
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+}
+
+.evenimente img {
+    width: 50%;
+}
+
+.evenimente div h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.evenimente div p {
+    font-size: 30px;
+    margin: 10px 2%;
+    padding-bottom: 50px;
+}
+
+.evenimente div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    padding: 20px 25px;
+    font-size: 20px;
+    margin-left: 300px;
+    width: 110px;
+    text-align: center;
+}
+
+.evenimente a:hover {
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    border: 1px solid brown;
+}
+
+                                                            /*Stilul paginii meniu*/
+
+.h1Restaurant {
+    font-size: 50px;
+    text-align: center;
+}
+
+.paginaMeniu {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.paginaMeniu ul {
+    margin-left: 100px;
+    padding-top: 70px;
+}
+
+.paginaMeniu div {
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -80px;
+}
+
+.paginaMeniu img {
+    padding: 5px;
+}
+
+.paginaMeniu h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.paginaMeniu ul li {
+    font-size: 25px;
+}
+
+.paginaMeniu div img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: -40px;
+}
+
+.omletaTaraneasca {
+    margin-left: 250px;
+}
+
+.paginaMeniu2 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.paginaMeniu2 ul {
+    padding-top: 70px;
+}
+
+.paginaMeniu2 ul li {
+    font-size: 25px;
+}
+
+.paginaMeniu2 div img {
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.ciolan {
+    margin-left: 250px;
+}
+
+.mamaliga {
+    margin-bottom: -80px;
+    margin-left: 20px;
+}
+
+.paginaMeniu3 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.paginaMeniu3 ul {
+    padding-top: 70px;
+    margin: 5%;
+}
+
+.paginaMeniu3 ul li {
+    font-size: 25px;
+}
+
+.paginaMeniu3 div img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+                                                                    /*Stilul paginii rezervare*/
+
+.paginaRezervare {
+    display: flex;
+    flex-flow: row;
+    background-image: url('imagini/pereteRezervare2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imaginiRezervare {
+    display: flex;
+    flex-flow: column;
+}
+
+.imaginiRezervare img {
+    width: 700px;
+    height: 400px;
+}
+
+select {
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 8px black, -3px -3px 8px black;
+    background-color: brown;
+    color: grey;
+    height: 40px;
+}
+
+form h4{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+                                                                    /*Stilul paginii evenimente*/
+
+.paginaEvenimente {
+    display: flex;
+    flex-flow: column;
+    background-image: url('imagini/pereteEvenimente1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paginaEvenimente img {
+    width: 450px;
+    height: 450px;
+    margin: 0 7%;
+    border-radius: 10%;
+    padding-bottom: 35px;
+}
+
+.infoEvenimente {
+    display: flex;
+    flex-flow: row;
+}
+
+.infoEvenimente h3 {
+    font-size: 50px;
+    text-indent: 150px;
+    color: brown;
+}
+
+.infoEvenimente p {
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+.paginaEvenimente2 {
+    background-image: url('imagini/pereteConferim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -35px;
+}
+
+.paginaEvenimente2 h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.paginaEvenimente2 p {
+    text-align: center;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.paginaEvenimente2 div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.paginaEvenimente2 div p {
+    padding: 0 2%;
+    font-size: 25px;
+}
+
+                                                                        /*Stilul paginii contacte*/
+
+.paginaContacte {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paginaContacte div{
+    width: 600px;
+    padding-left: 200px;
+}
+
+.paginaContacte div h2 {
+    font-size: 50px;
+    color: brown;
+}
+
+.paginaContacte div p {
+    font-size: 30px;
+}
+
+.paginaContacte form {
+    display: inline-block;
+    margin-left: 15%;
+}
+
+form {
+    width: 400px;
+    margin: 100px auto;
+}
+
+form h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: brown;
+    box-shadow: 5px 5px 8px black, -3px -3px 8px black;
+}
+
+form input {
+    padding: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: brown;
+    color: grey;
+    width: 100%;
+    border-style: none;
+    margin-top: 3px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    box-shadow: 5px 5px 8px black, -3px -3px 8px black;
+}
+
+form input:focus {
+    background-color: rgba(165, 42, 42, 0.777);
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: horizontal;
+    background-color: brown;
+    text-align: center;
+    font-size: 20px;
+    color: brown;
+    box-shadow: 5px 5px 8px black, -3px -3px 8px black;
+}
+
+textarea:focus {
+    background-color: rgba(165, 42, 42, 0.819);
+    color: black;
+}
+
+button {
+    background-color: brown;
+    margin:10px 25%;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all;
+    font-family: 'Amatic SC', cursive;
+    color: grey;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.886);
+    color: brown;
+}
+
+aside iframe {
+    display: flex;
+    width: 100%;
+}
+
+.sageata {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    font-size: 20px;
+    border: 2px solid brown;
+    background-color: brown;
+    color:white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.sageata:hover {
+    background-color: white;
+    color: brown;
+}
+
+.footer {
+    background-image: url('imagini/pereteLocatie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    font-size: 20px;
+}
+
+.footer table {
+    padding-top: 30px;
+}
+
+.footer table td {
+    text-align: -webkit-center;
+    padding: 0 50px;
+    width: 500px;
+    padding: 20px 0;
+}
